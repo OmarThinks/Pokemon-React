@@ -1,8 +1,12 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
-import App from "./src/App";
+import App from "./App";
 import reportWebVitals from "./reportWebVitals";
+
+// TODO: Redux
+// TODO: MUI theme provider
+// TODO: Create an App.tsx file, that will have the Redux and the theme provider
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
