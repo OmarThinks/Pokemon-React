@@ -2,8 +2,6 @@ import React from "react";
 import { createTheme } from "@mui/material";
 import { orange } from "@mui/material/colors";
 
-
-
 declare module "@mui/material/styles" {
   interface Theme {
     status: {
