@@ -3,9 +3,13 @@ import "./App.css";
 
 function App() {
   return (
-    <>
-      <p className="read-the-docs">Hey</p>
-    </>
+    <div
+      style={{
+        alignSelf: "stretch",
+        background: "green",
+        height: 50,
+      }}
+    ></div>
   );
 }
 
