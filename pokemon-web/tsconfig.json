@@ -1,9 +1,13 @@
 {
   "compilerOptions": {
     "target": "ESNext",
-    "lib": ["DOM", "DOM.Iterable", "ESNext"],
+    "lib": ["DOM", "DOM.Iterable", "ESNext", "es6", "dom"],
     "module": "ESNext",
     "skipLibCheck": true,
+
+    "noImplicitAny": true,
+    "noImplicitThis": true,
+    "strictNullChecks": true,
 
     /* Bundler mode */
     "moduleResolution": "bundler",
@@ -21,6 +25,8 @@
 
     "baseUrl": "./src/",
     "paths": {
+      "@components": ["./components/*"],
+      "@redux/*": ["./redux/*"],
       "@root/*": ["./*"]
     }
   },
