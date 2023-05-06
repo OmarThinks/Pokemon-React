@@ -1,5 +1,4 @@
 import React from "react";
-import "./App.css";
 
 function App() {
   return (
@@ -7,9 +6,21 @@ function App() {
       style={{
         alignSelf: "stretch",
         background: "green",
-        height: 50,
+        display: "flex",
+        flexDirection: "column",
+        flexGrow: 1,
       }}
-    ></div>
+    >
+      <p
+        className="read-the-docs"
+        style={{
+          padding: 0,
+          margin: 0,
+        }}
+      >
+        Hey
+      </p>
+    </div>
   );
 }
 
