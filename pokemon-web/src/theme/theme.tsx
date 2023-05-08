@@ -1,5 +1,6 @@
 import { createTheme } from "@mui/material";
 import { orange } from "@mui/material/colors";
+import { Theme, ThemeOptions } from "@mui/material";
 
 declare module "@mui/material/styles" {
   interface Theme {
@@ -24,6 +25,9 @@ const lightTheme = createTheme({
 const darkTheme = createTheme({
   status: {
     danger: orange[500],
+  },
+  palette: {
+    mode: "dark",
   },
 });
 

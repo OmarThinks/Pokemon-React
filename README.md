@@ -1,2 +1,3 @@
-# SmallReactWebsite
-Revising react for web
+# Pokemon Web
+
+Building a small web application.
