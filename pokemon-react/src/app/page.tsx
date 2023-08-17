@@ -1,9 +1,17 @@
 import Image from "next/image";
+import { useSearchParams } from "next/navigation";
 
-export default function Home() {
+export default function Home({
+  searchParams,
+}: {
+  searchParams: { [key: string]: string | string[] | undefined };
+}) {
+  const search = searchParams["p"] ?? "1";
+
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
       <p>Hi</p>
+      <p>{search}</p>
     </main>
   );
 }
