@@ -4,9 +4,16 @@ import themeSlice, { changeTheme } from "./features/themeSlice";
 import ReduxProvider from "./provider";
 
 const store = configureStore({
-  reducer: themeSlice.reducer,
+  reducer: {
+    theme: themeSlice.reducer,
+  },
 });
 
+// Infer the `RootState` and `AppDispatch` types from the store itself
+type RootState = ReturnType<typeof store.getState>;
+// Inferred type: {posts: PostsState, comments: CommentsState, users: UsersState}
+type AppDispatch = typeof store.dispatch;
+
 export { changeTheme, ReduxProvider };
-export type { Theme };
+export type { Theme, RootState, AppDispatch };
 export default store;
