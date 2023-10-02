@@ -20,6 +20,7 @@
     ],
     "paths": {
       //"@/*": ["./src/*"] // Only if required
+      "@components": ["./src/components/index.tsx"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
