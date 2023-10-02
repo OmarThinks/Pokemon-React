@@ -1,6 +1,6 @@
 import { configureStore } from "@reduxjs/toolkit";
 import type { Theme } from "./features/themeSlice";
-import themeSlice, { changeTheme } from "./features/themeSlice";
+import themeSlice, { changeTheme, themeSelector } from "./features/themeSlice";
 import ReduxProvider from "./provider";
 
 const store = configureStore({
@@ -14,6 +14,6 @@ type RootState = ReturnType<typeof store.getState>;
 // Inferred type: {posts: PostsState, comments: CommentsState, users: UsersState}
 type AppDispatch = typeof store.dispatch;
 
-export { changeTheme, ReduxProvider };
+export { changeTheme, ReduxProvider, themeSelector };
 export type { Theme, RootState, AppDispatch };
 export default store;
