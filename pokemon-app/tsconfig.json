@@ -21,7 +21,8 @@
     "paths": {
       //"@/*": ["./src/*"] // Only if required
       "@components": ["./src/components/index.tsx"],
-      "@redux": ["./src/redux/index.tsx"]
+      "@redux": ["./src/redux/index.tsx"],
+      "@screens": ["./src/screens/index.tsx"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
