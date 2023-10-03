@@ -22,7 +22,8 @@
       //"@/*": ["./src/*"] // Only if required
       "@components": ["./src/components/index.tsx"],
       "@redux": ["./src/redux/index.tsx"],
-      "@screens": ["./src/screens/index.tsx"]
+      "@screens": ["./src/screens/index.tsx"],
+      "@hocs": ["./src/hocs/index.tsx"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
