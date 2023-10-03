@@ -7,8 +7,9 @@ import { useTheme } from "@mui/material/styles";
 import { Card } from "@mui/material";
 import Brightness4Icon from "@mui/icons-material/Brightness4";
 import Brightness7Icon from "@mui/icons-material/Brightness7";
+import { MainLayout } from "@hocs";
 
-export default function Home() {
+function Home() {
   const theme = useSelector(themeSelector);
   const dispatch = useDispatch();
   const muiTheme = useTheme();
@@ -58,3 +59,5 @@ export default function Home() {
     </Box>
   );
 }
+
+export default MainLayout(Home);
